@@ -1,0 +1,20 @@
+COME OTTENERE IL FILE APK DI VOICETENNIS
+
+Nota: qui è stato preparato il progetto Android e il flusso di compilazione automatica, ma l'APK non è stato compilato né testato in questa sessione: l'ambiente di lavoro non contiene Android SDK/Gradle.
+
+Procedura con compilazione online (senza installare Android Studio):
+1. Estrai VoiceTennisAndroid_sorgente.zip sul computer.
+2. Crea un repository su GitHub (https://github.com/new). Se non hai un account, GitHub ti chiederà di crearne uno.
+3. Carica TUTTI i file e le cartelle dentro la cartella VoiceTennisAndroid nel repository. La cartella .github/workflows è importante; abilita la visualizzazione dei file nascosti se necessario.
+4. Apri la scheda Actions del repository.
+5. Seleziona “Build VoiceTennis APK” e premi “Run workflow” (oppure attendi che parta dopo aver caricato i file sul branch main).
+6. Quando il lavoro termina con esito verde, apri l'esecuzione e scarica l'artefatto “VoiceTennis-debug-apk”.
+7. Estrai lo ZIP scaricato: contiene app-debug.apk. Trasferiscilo sul telefono Android e aprilo. Se Android lo chiede, consenti l'installazione da quella fonte.
+
+L'APK debug è firmato per test e non è una versione pronta per la pubblicazione sul Play Store.
+
+LIMITI DEL PROTOTIPO
+- Il riconoscimento vocale dipende dal servizio vocale Android installato e può richiedere Internet.
+- L'app tenta di riavviare l'ascolto dopo ogni frase; Android può interromperlo in background. Per i primi test tieni l'app aperta e lo schermo acceso.
+- Il conteggio dei set è semplificato e non implementa tutte le regole ufficiali del tennis o i tie-break.
+- Prima dell'uso in partita, verifica sul telefono che i comandi “Marco game” e “Luca game” vengano riconosciuti correttamente.

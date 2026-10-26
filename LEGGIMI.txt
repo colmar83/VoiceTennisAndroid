@@ -1,0 +1,15 @@
+VOICETENNIS — PROGETTO ANDROID SORGENTE
+
+Questo ZIP contiene il progetto sorgente, NON un APK già compilato.
+Per generare l'APK in Android Studio:
+1. Installa Android Studio: https://developer.android.com/studio
+2. Estrai lo ZIP e apri la cartella VoiceTennisAndroid in Android Studio.
+3. Attendi la sincronizzazione Gradle e installa gli SDK richiesti.
+4. Seleziona Build > Build Bundle(s) / APK(s) > Build APK(s).
+5. Android Studio mostrerà il percorso dell'APK.
+
+Per compilare online senza installare Android Studio, consulta COME_OTTENERE_APK.txt. È incluso un workflow GitHub Actions per compilare un APK di test.
+
+Uso: modifica i nomi, premi Avvia ascolto, consenti il microfono e pronuncia “Marco game” o “Luca game”.
+
+Limiti: progetto iniziale non compilato o testato su un dispositivo in questa sessione. Il riconoscimento può richiedere Internet. L'app tenta di riavviare l'ascolto dopo ogni frase ma Android può interromperlo in background: tieni l'app in primo piano e lo schermo acceso. Conteggio set semplificato, senza tie-break o tutte le regole ufficiali.
